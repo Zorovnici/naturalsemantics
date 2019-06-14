@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NatSem</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/codeServlet.css}">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="static/js/loadAndsetCodeimgPNG.js"></script>
+</head>
+<body>
+<script th:src="@{/js/codeServlet.js}"></script>
+<div th:utext="${web.showVariables(code)}" class="container">
+</div>
+<div id="all">
+    <h2>Syntax three of programming language</h2>
+    <div id="three" th:utext="${web.addImageToHTML()}">
+    </div>
+</div>
+</body>
+</html>

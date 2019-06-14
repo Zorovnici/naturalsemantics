@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NatSem</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<main id="main">
+  <form name="form" method="GET" action="codeServlet">
+      <textarea id="code" name="code" required></textarea>
+      <div class="buttons">
+      <input id="gen" class="gen" type="submit" value="Send" name="submit">
+      <input id="clear" class="clear" type="reset" value="Clear">
+      </div>
+  </form>
+<script th:src="@{/js/main.js}"></script>
+</main>
+</body>
+</html>
